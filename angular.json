@@ -101,6 +101,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "vasgergo:build:production",
+              "serveTarget": "vasgergo:serve:production"
+            },
+            "development": {
+              "buildTarget": "vasgergo:build:development",
+              "serveTarget": "vasgergo:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
