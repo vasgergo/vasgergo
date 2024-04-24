@@ -18,3 +18,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_VASGERGO_B3370 }}'
           channelId: live
           projectId: vasgergo-b3370
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
