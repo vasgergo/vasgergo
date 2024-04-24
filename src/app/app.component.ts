@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {FbStorageService} from "./shared/services/fb-storage.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'vasgergo';
+  ppSrc: string | undefined;
+
+  constructor(fbStorageService: FbStorageService) {
+
+    fbStorageService.getFireStorageImage('pp.jpg').then((url) => {
+      this.ppSrc = url;
+    });
+
+  }
+
 }
