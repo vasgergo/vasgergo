@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "vasgergo-b3370": {
+      "hosting": {
+        "vasgergo": [
+          "vasgergo-b3370"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "vasgergo-b3370"
+  }
+}
