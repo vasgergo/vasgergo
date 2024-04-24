@@ -15,7 +15,7 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    provideFirebaseApp(() => initializeApp({"projectId":"vasgergo-b3370","appId":"1:657290616852:web:e7b0e0f8fad9118dfe0701","storageBucket":"vasgergo-b3370.appspot.com","apiKey":'${{ secrets.FIREBASE_SERVICE_ACCOUNT_VASGERGO_B3370 }}',"authDomain":"vasgergo-b3370.firebaseapp.com","messagingSenderId":"657290616852","measurementId":"G-7T4QF91JBB"})),
+    provideFirebaseApp(() => initializeApp({"projectId":"vasgergo-b3370","appId":"1:657290616852:web:e7b0e0f8fad9118dfe0701","storageBucket":"vasgergo-b3370.appspot.com","apiKey":'${{ secrets.FIREAPIKEY }}',"authDomain":"vasgergo-b3370.firebaseapp.com","messagingSenderId":"657290616852","measurementId":"G-7T4QF91JBB"})),
     provideAnalytics(() => getAnalytics()),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage())
